@@ -1,0 +1,40 @@
+<?php
+$kolory = rand(0, 1) == 0 ? array(
+    "czerwony",
+    "zielony",
+    "niebieski",
+    "żółty",
+    "pomarańczowy",
+    "fioletowy",
+    "różowy",
+    "brązowy",
+    "czarny",
+    "biały",
+    "szary"
+) : array(
+    "czerwony",
+    "bordowy",
+    "różowy",
+    "łososiowy",
+    "zielony",
+    "limonkowy",
+    "oliwkowy",
+    "miętowy",
+    "niebieski",
+    "granatowy",
+    "błękitny",
+    "turkusowy",
+    "żółty",
+    "złoty",
+    "kremowy",
+    "pomarańczowy",
+    "fioletowy",
+    "lawendowy",
+    "brązowy",
+    "beżowy",
+    "czarny",
+    "biały",
+    "szary",
+    "srebrny"
+);
+?>

@@ -1,0 +1,2 @@
+<h3>Ścieżka pliku</h3>
+<p>Za pomocą stałej __FILE__ sprawdź ścieżkę aktualnego pliku, a następnie utwórz i zamieść plik html z dowolnym krótkim fragmentem kodu (np. znacznik p z krótkim tekstem) w tym samym folderze i za pomocą include oraz __DIR__ wyświetl jego zawartość.</p>
