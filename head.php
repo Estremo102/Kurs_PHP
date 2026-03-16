@@ -12,13 +12,13 @@
             echo $title;
             ?>
     </title>
-    <link rel="stylesheet" href="/php/style.css">
-    <link rel="stylesheet" href="/php/prism.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
     <script src="script.js" defer></script>
-    <script src="/php/prism.js" defer></script>
-    <link rel="shortcut icon" href="/php/images/PHP-logo.svg" type="image/x-icon">
+    <script src="prism.js" defer></script>
+    <link rel="shortcut icon" href="images/PHP-logo.svg" type="image/x-icon">
 </head>
 <body>
     <header>
-        <a href="/php/index.php"><img src="/php/images/PHP-logo.svg"></a> <h1> <?php echo "Kurs PHP - $title"; ?> </h1>
+        <a href="index.php"><img src="images/PHP-logo.svg"></a> <h1> <?php echo "Kurs PHP - $title"; ?> </h1>
     </header>
