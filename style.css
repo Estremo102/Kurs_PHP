@@ -230,7 +230,7 @@ button{
     padding: auto;
 }
 
-.check-task-btn{
+.check-task-btn, .show-code-btn{
     background-color: #0002;
     border: none;
     color: #edeeff;
