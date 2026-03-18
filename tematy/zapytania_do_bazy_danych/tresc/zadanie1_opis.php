@@ -16,5 +16,4 @@ try {
     echo "Błąd połączenia: " . $e->getMessage();
 }
 ?&gt;</code></pre>
-<p>Twoim zadaniem jest w pliku zadanie1.php stworzyć nowe połączenie z bazą danych. Skorzystaj z powyższego kodu, modyfikując odpowiednie fragmenty.</p>
-            
+<p>Twoim zadaniem jest w pliku zadanie1.php stworzyć nowe połączenie z bazą danych. Możesz skorzystać z powyższego kodu, modyfikując odpowiednie fragmenty.</p>

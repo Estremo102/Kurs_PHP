@@ -11,6 +11,7 @@ return [
     ],
     'PHP + MySQL' => [
         ['title' => 'Połączenie z bazą danych', 'src' => 'polaczenie_z_baza_danych'],
+        ['title' => 'Zapytania do bazy danych', 'src' => 'zapytania_do_bazy_danych'],
     ],
 ];
 ?>

@@ -100,7 +100,6 @@ aside ul li:hover {
     background-color: #FFF2;
 }
 
-/* make the link fill the list item so the whole area is clickable */
 aside ul li a {
     display: block;
     width: 100%;
@@ -108,10 +107,8 @@ aside ul li a {
     color: inherit;
 }
 
-/* active topic styling */
 aside ul li.active {
-    background-color: #5a5fcf;
-    font-weight: bold;
+    background-color: #5a5fcfDA; 
     border-left: 4px solid #02074d;
 }
 
