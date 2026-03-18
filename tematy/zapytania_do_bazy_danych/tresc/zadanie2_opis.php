@@ -18,8 +18,6 @@ try {
   die("Could not connect. " . $e->getMessage());
 }
 
-
-
 try {
     $sql = "SELECT Host, User FROM global_priv";
     $result = $conn->query($sql);
@@ -50,8 +48,6 @@ try {
 } catch(PDOException $e){
   die("Could not connect. " . $e->getMessage());
 }
-
-
 
 try {
     $sql = "SELECT Host, User FROM global_priv";

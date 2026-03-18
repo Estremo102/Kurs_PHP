@@ -1,2 +1,2 @@
-<h3>Opis zadania 5</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid pariatur porro dicta perferendis quibusdam soluta recusandae. Accusantium ducimus perspiciatis velit, vitae tempore ipsum, cum incidunt illum exercitationem fuga repellendus doloribus.</p>
+<h3>Praktyczne zastosowanie v1</h3>
+<p>Teraz zastanów się nad praktycznym zastosowaniem w projekcie. Przykładowo może być to np. tabela z pewnymi danymi w panelu administracyjnym, albo dostępne produkty.</p>
