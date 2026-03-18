@@ -11,26 +11,32 @@ $username = "root";
 $password = "";
 $dbname = "mysql";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e){
+  die("Could not connect. " . $e->getMessage());
 }
 
-$sql = "SELECT Host, User FROM global_priv";
 
-$result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-  while($row = $result->fetch_assoc()) {
-    echo "Host: " . $row["Host"]. " - User: " . $row["User"]. "<br>";
-  }
-} else {
-  echo "0 results";
+try {
+    $sql = "SELECT Host, User FROM global_priv";
+    $result = $conn->query($sql);
+    if ($result->rowCount() > 0) {
+        while($row = $result->fetch()) {
+            echo "Host: " . $row["Host"]. " - User: " . $row["User"]. "<br>";
+        }
+        unset($result);
+    } else {
+        echo "Brak rekordów dla zapytania $sql.";
+    }
+} catch(PDOException $e) {
+    echo "Error: " . $e->getMessage();
 }
 
-$conn->close();
-?&gt;</code></pre>
+$conn = null;
+?></code></pre>
 rezultat:
 <pre><code><?php
 $servername = "localhost";
@@ -38,25 +44,31 @@ $username = "root";
 $password = "";
 $dbname = "mysql";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e){
+  die("Could not connect. " . $e->getMessage());
 }
 
-$sql = "SELECT Host, User FROM global_priv";
 
-$result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-  while($row = $result->fetch_assoc()) {
-    echo "Host: " . $row["Host"]. " - User: " . $row["User"]. "<br>";
-  }
-} else {
-  echo "0 results";
+try {
+    $sql = "SELECT Host, User FROM global_priv";
+    $result = $conn->query($sql);
+    if ($result->rowCount() > 0) {
+        while($row = $result->fetch()) {
+            echo "Host: " . $row["Host"]. " - User: " . $row["User"]. "<br>";
+        }
+        unset($result);
+    } else {
+        echo "Brak rekordów dla zapytania $sql.";
+    }
+} catch(PDOException $e) {
+    echo "Error: " . $e->getMessage();
 }
 
-$conn->close();
+$conn = null;
 ?></code></pre>
 </p>
 <p>Twoim zadaniem jest połączyć się z bazą danych ze swojego projektu i wypisać dane z dowolnej tabeli. Jeśli robicie projekt w kilka osób, niech każdy wypisze dane z innej tabeli.</p>
