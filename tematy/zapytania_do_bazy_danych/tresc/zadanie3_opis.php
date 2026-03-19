@@ -17,11 +17,11 @@ try {
     $sql = "SELECT Host, User FROM global_priv";
     $result = $conn->query($sql);
     if ($result->rowCount() > 0) {
-        echo '<ol>';
+        echo '&lt;ol&gt;';
         while($row = $result->fetch()) {
-            echo "<li>Host: " . $row["Host"]. " - User: " . $row["User"]. "</li>";
+            echo "&lt;li&gt;Host: " . $row["Host"]. " - User: " . $row["User"]. "</li>";
         }
-        echo '</ol>';
+        echo '&lt;/ol&gt;';
         unset($result);
     } else {
         echo "Brak rekordów dla zapytania $sql.";
