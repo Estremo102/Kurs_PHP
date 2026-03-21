@@ -60,6 +60,6 @@ echo '<br>' . $wynik;
 ?></code></pre>
 <p>Zwróć uwagę, że wartość którą zwraca funkcja można przypisać do zmiennej jak i od razu wykorzystać w innym fragmencie kodu.</p>
 <p>
-    Twoim zadaniem jest napisanie funkcji która przyjmie trzy argumenty i zwróci obwód trójkąta. Jednak jeśli któryś z parametrów będzie niepoprawny wyświetlisz komunikat "Błędne dane wejściowe" i zwrócisz wartość -1, a jeśli trójkąt jest niemożliwy do zbudowania wyświetlisz komunikat "Z podanych boków nie da się zbudować trójkąta". <br>
+    Twoim zadaniem jest napisanie funkcji która przyjmie trzy argumenty i zwróci obwód trójkąta. Jednak jeśli któryś z parametrów będzie niepoprawny wyświetlisz komunikat "Błędne dane wejściowe" i zwrócisz wartość -1, a jeśli trójkąt jest niemożliwy do zbudowania wyświetlisz komunikat "Z podanych boków nie da się zbudować trójkąta" i zwrócisz -2. <br>
     podpowiedź: Trójkąta nie da się zbudować jeśli suma dwóch boków jest mniejsza lub równa trzeciemu.
 </p>

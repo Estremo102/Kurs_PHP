@@ -23,9 +23,9 @@ if ($wynik2 !== 15) {
 ob_start();
 $wynik3 = obwodTrojkata(1, 1, 2);
 $output3 = ob_get_clean();
-if ($wynik3 !== -1) {
+if ($wynik3 !== -2) {
 	$czyWynikiPoprawne = false;
-	$komunikaty[] = "Dla niemożliwego trójkąta (1, 1, 2) powinna być zwrócona -1, otrzymano: $wynik3";
+	$komunikaty[] = "Dla niemożliwego trójkąta (1, 1, 2) powinna być zwrócona -2, otrzymano: $wynik3";
 }
 if (strpos($output3, "Z podanych boków nie da się zbudować trójkąta") === false) {
 	$czyWynikiPoprawne = false;
@@ -35,9 +35,9 @@ if (strpos($output3, "Z podanych boków nie da się zbudować trójkąta") === f
 ob_start();
 $wynik4 = obwodTrojkata(1, 2, 3);
 $output4 = ob_get_clean();
-if ($wynik4 !== -1) {
+if ($wynik4 !== -2) {
 	$czyWynikiPoprawne = false;
-	$komunikaty[] = "Dla niemożliwego trójkąta (1, 2, 3) powinna być zwrócona -1, otrzymano: $wynik4";
+	$komunikaty[] = "Dla niemożliwego trójkąta (1, 2, 3) powinna być zwrócona -2, otrzymano: $wynik4";
 }
 
 ob_start();
