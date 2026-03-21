@@ -96,6 +96,15 @@ aside ul li {
     font-weight: 900;
 }
 
+aside h3 {
+    width: 80%;
+    margin: 16px auto 8px;
+    padding-bottom: 6px;
+    color: #02074d;
+    border-bottom: 2px solid #02074d66;
+    font-size: 18px;
+}
+
 aside ul li:hover {
     background-color: #FFF2;
 }
