@@ -85,9 +85,8 @@
             console.error(`Błąd przy ładowaniu zadania ${taskNumber}:`, error);
             const container = document.getElementById(`wynik-zad${taskNumber}`);
             if (container) {
-                container.innerHTML = 'Błąd przy ładowaniu wyniku<br>';
                 let result = await runCode(srcPath, taskNumber);
-                container.innerHTML += result;
+                container.innerHTML = 'Błąd przy ładowaniu wyniku<br>' + result;
             }
         }
     }

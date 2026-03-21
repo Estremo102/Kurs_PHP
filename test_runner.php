@@ -30,7 +30,9 @@ if (!file_exists($test)) {
 
 $poprawne = false;
 $komunikaty = [];
+ob_start();
 include $test;
+$wynikTestu = ob_get_clean();
 $wynik = [
     'poprawne' => $poprawne,
     'komunikaty' => $komunikaty,
