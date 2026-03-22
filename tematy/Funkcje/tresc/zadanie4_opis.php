@@ -40,15 +40,15 @@ echo "$x<br>";
     Przykładowe rozwiązania: 
     <ol>
         <li>trim + preg_replace (wymaga regex, który dopiero będziemy poznawać w przyszłych lekcjach) + strtolower</li>
-        <li>trim + explode + array_filter + implode + strtolower</li>
+        <li>explode + array_filter + implode + strtolower</li>
     </ol>
     co robią powyższe funkcje?
     <ul>
         <li>trim usuwa spacje z początku i końca.</li>
+        <li>preg_replace można powiedzieć, że to bardziej rozbudowana wersja str_replace.</li>
         <li>explode rozbija tekst na fragmenty.</li>
         <li>array_filter usuwa te puste elementy.</li>
-        <li>skleja elementy tablicy w jednego stringa.</li>
-        <li>normalizuje wielkość liter.</li>
-        <li>preg_replace można powiedzieć, że to bardziej rozbudowana wersja str_replace.</li>
+        <li>implode skleja elementy tablicy w jednego stringa.</li>
+        <li>strtolower normalizuje wielkość liter.</li>
     </ul>
 </p>

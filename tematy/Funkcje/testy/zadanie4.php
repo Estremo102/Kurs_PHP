@@ -45,7 +45,7 @@ foreach ($testy as [$wejscie, $oczekiwane]) {
 
 	if ($tekst !== $oczekiwane) {
 		$czyWynikiPoprawne = false;
-		$komunikaty[] = "Błędny wynik dla '$wejscie'. Oczekiwano: '$oczekiwane', Otrzymano: '$tekst'";
+		$komunikaty[] = "Błędny wynik dla '$wejscie'. Oczekiwano: <pre>'$oczekiwane'</pre>, Otrzymano: <pre>'$tekst'</pre>";
 	}
 }
 
