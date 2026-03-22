@@ -58,4 +58,7 @@ $a = myFamily("Nowak", "Jan", "Anna", "Michał");
 echo $a;
 ?></code></pre>
 <p>Więc gdyby napisać <pre><code>function myFamily(...$firstname, $lastname) {</code></pre> to wystąpiłby błąd.</p>
-<p>Pamiętasz funkcje min() i max()? Jeśli nie możesz zaglądnąć do tematu Funkcje matematyczne. Twoim zadaniem jest zaimplementowanie własnych funkcji myMin oraz myMax które będą działać identycznie.</p>
+<p>
+    Pamiętasz funkcje min() i max()? Jeśli nie możesz zaglądnąć do tematu Funkcje matematyczne. Twoim zadaniem jest zaimplementowanie własnych funkcji myMin oraz myMax które będą pełnić te samą funkcję. <br>
+    Nie musisz obsługiwać przyjmowania tablicy jako argumentu, testy tylko sprawdzają różną ilość prostych zmiennych.
+</p>
