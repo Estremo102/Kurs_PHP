@@ -53,4 +53,21 @@ function addNumbersInt(float $a, float $b) : int {
 echo var_dump(addNumbersFloat(1.8, 5.2));
 echo addNumbersInt(1.2, 5.2);
 ?></code></pre>
-<p>Trzeba pamiętać, należy upewnić się, że zwracany typ jest prawidłowego typu.</p>
+<p>Trzeba pamiętać, należy upewnić się, że zwracany typ jest prawidłowego typu.</p> 
+<p><strong>Uwaga:</strong> <code>declare(strict_types=1);</code> działa tylko dla pliku, w którym zostało zadeklarowane. Nie jest to ustawienie globalne dla całego projektu.</p>
+<p>
+    Zadanie: Napisz funkcję sredniaOrazMediana, która oblicza średnią i medianę z podanych liczb. Funkcja powinna działać w następujący sposób:
+    <ol>
+        <li>Pierwszy argument ma być przekazywany przez referencję i ma być typu float. Funkcja powinna zapisać w nim obliczoną średnią.</li>
+        <li>Kolejne argumenty mają być przekazywane jako zmienna liczba parametrów i powinny być typu int.</li>
+        <li>Funkcja powinna zwracać medianę za pomocą return.</li>
+        <li>Typ zwracany funkcji powinien być int. Jeśli liczba elementów jest parzysta i mediana wypada jako ułamek, należy ją zaokrąglić zgodnie z zasadami matematyki.</li>
+    </ol>
+    przydatne funkcje:
+    <ul>
+        <li>count() - podaje długość tablicy</li>
+        <li>sort() - sortuje listę rosnąco, Uwaga funkcja sortuje oryginalną tablicę</li>
+        <li>array_sum() - zwraca sumę elementów</li>
+        <li>round() - zwraca zaokrągloną liczbę (zwraca float)</li>
+    </ul>
+</p>
