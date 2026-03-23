@@ -307,3 +307,7 @@ table, tr, td {
     padding: 5px;
     background-color: #a7abe6;
 }
+
+main section p {
+    text-align: justify;
+}
