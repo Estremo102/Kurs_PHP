@@ -23,7 +23,7 @@ try {
     $result = $conn->query($sql);
     if ($result->rowCount() > 0) {
         while($row = $result->fetch()) {
-            echo "Host: " . $row["Host"]. " - User: " . $row["User"]. "<br>";
+            echo "Host: " . $row["Host"]. " - User: " . $row["User"]. "&lt;br>";
         }
         unset($result);
     } else {

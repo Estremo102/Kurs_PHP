@@ -19,7 +19,7 @@ try {
     if ($result->rowCount() > 0) {
         echo '&lt;ol&gt;';
         while($row = $result->fetch()) {
-            echo "&lt;li&gt;Host: " . $row["Host"]. " - User: " . $row["User"]. "</li>";
+            echo "&lt;li&gt;Host: " . $row["Host"]. " - User: " . $row["User"]. "&lt;/li>";
         }
         echo '&lt;/ol&gt;';
         unset($result);
