@@ -11,4 +11,4 @@
 </p>
 <p>Wartości w tablicy mogą być dowolne, najczęściej są to liczby, ciągi znaków i inne proste zmienne, ale można przechowywać także np. obiekty czy funkcje</p>
 <p>Funkcja count() zwraca ilość elementów w tablicy.</p>
-<p>Zadanie: W kodzie masz dostęp do zmiennej tablica, wyświetl jej długość</p>
+<p>Zadanie: W kodzie masz dostęp do zmiennej $tablica, wyświetl jej długość</p>
