@@ -9,6 +9,7 @@ return [
         ['title' => 'Instrukcje warunkowe', 'src' => 'Instrukcje_warunkowe'],
         ['title' => 'Pętle', 'src' => 'Petle'],
         ['title' => 'Funkcje', 'src' => 'Funkcje'],
+        ['title' => 'Tablice', 'src' => 'Tablice'],
     ],
     'PHP + MySQL' => [
         ['title' => 'Połączenie z bazą danych', 'src' => 'polaczenie_z_baza_danych'],
