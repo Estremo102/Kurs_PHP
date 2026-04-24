@@ -10,6 +10,7 @@ return [
         ['title' => 'Pętle', 'src' => 'Petle'],
         ['title' => 'Funkcje', 'src' => 'Funkcje'],
         ['title' => 'Tablice', 'src' => 'Tablice'],
+        ['title' => 'Tablice 2', 'src' => 'Tablice_2'],
     ],
     'PHP + MySQL' => [
         ['title' => 'Połączenie z bazą danych', 'src' => 'polaczenie_z_baza_danych'],
