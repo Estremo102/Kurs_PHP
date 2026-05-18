@@ -301,6 +301,10 @@ span.error {
     font-weight: bold;
 }
 
+span.important {
+    font-weight: bold;
+}
+
 table, tr, td {
     border: 2px solid #02074d;
     border-collapse: collapse;

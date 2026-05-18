@@ -11,6 +11,7 @@ return [
         ['title' => 'Funkcje', 'src' => 'Funkcje'],
         ['title' => 'Tablice', 'src' => 'Tablice'],
         ['title' => 'Tablice 2', 'src' => 'Tablice_2'],
+        ['title' => 'Zmienne superglobalne', 'src' => 'Zmienne_superglobalne'],
     ],
     'PHP + MySQL' => [
         ['title' => 'Połączenie z bazą danych', 'src' => 'polaczenie_z_baza_danych'],
