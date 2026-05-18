@@ -4,7 +4,7 @@
     Zmienne superglobalne w PHP to:
     <ul>
         <li>
-            <span class="important">$GLOBALS</span> - Tablica zawierająca odniesienia do wszystkich zmiennych globalnych.
+            <span class="important">$GLOBALS</span> - Tablica zawierająca odniesienia do wszystkich zmiennych globalnych w danym skrypcie.
         </li>
         <li>
             <span class="important">$_SERVER</span> - Posiada informacje o serwerze, na którym jest hostowana strona, w tym nagłówki, ścieżki czy lokalizacja skryptu.
