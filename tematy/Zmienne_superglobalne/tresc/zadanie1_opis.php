@@ -32,4 +32,28 @@
         </li>
     </ul>
 </p>
-<pre><code class="language-php"></code></pre>
+<p><span class="improtant">Zadanie: </span> Za pomocą pętli foreach i var_dump sprawdź zawartość zmiennej superglobalnej 
+<?php
+$superglobalne = [
+'$GLOBALS',
+'$_SERVER',
+'$_REQUEST', 
+'$_POST',
+'$_GET',
+'$_FILES',
+'$_ENV',
+'$_COOKIE',
+'$_SESSION'
+];
+$username = get_current_user();
+echo $superglobalne[hexdec(substr(hash('sha256', $username), 0, 8)) % count($superglobalne)];
+if (isset($_GET['username']) && $_GET['username'] !== '') {
+    $username = $_GET['username'];
+    $index = hexdec(substr(hash('sha256', $username), 0, 8)) % count($superglobalne);
+    echo '<br>'. $superglobalne[$index];
+}
+?></p></p>
+<p>Przypomnienie foreach: </p>
+<pre><code class="language-php">foreach (zbior_danych as $zmienna ze zbioru) {
+    // ...
+}</code></pre>
