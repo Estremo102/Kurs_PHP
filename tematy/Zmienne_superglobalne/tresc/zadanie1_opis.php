@@ -52,7 +52,7 @@ if (isset($_GET['username']) && $_GET['username'] !== '') {
     $index = hexdec(substr(hash('sha256', $username), 0, 8)) % count($superglobalne);
     echo '<br>'. $superglobalne[$index];
 }
-?></p></p>
+?></p>
 <p>Przypomnienie foreach: </p>
 <pre><code class="language-php">foreach ($zbior_danych as $zmienna_ze_zbioru) {
     // ...
