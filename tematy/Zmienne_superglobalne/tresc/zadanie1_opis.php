@@ -54,6 +54,12 @@ if (isset($_GET['username']) && $_GET['username'] !== '') {
 }
 ?></p></p>
 <p>Przypomnienie foreach: </p>
-<pre><code class="language-php">foreach (zbior_danych as $zmienna ze zbioru) {
+<pre><code class="language-php">foreach ($zbior_danych as $zmienna_ze_zbioru) {
     // ...
+}
+
+//lub 
+
+foreach ($dane as $klucz => $wartosc) {
+    // ...   
 }</code></pre>
