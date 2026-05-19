@@ -1,3 +1,3 @@
 <h3>$_GET</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid pariatur porro dicta perferendis quibusdam soluta recusandae. Accusantium ducimus perspiciatis velit, vitae tempore ipsum, cum incidunt illum exercitationem fuga repellendus doloribus.</p>
+<p>Zmienna $_GET zawiera zmienne przekazane metodą GET</p>
 <pre><code class="language-php"></code></pre>

@@ -1,3 +1,3 @@
 <h3>$_POST</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid pariatur porro dicta perferendis quibusdam soluta recusandae. Accusantium ducimus perspiciatis velit, vitae tempore ipsum, cum incidunt illum exercitationem fuga repellendus doloribus.</p>
+<p>zmienna $_POST zawiera tablicę zmiennych otrzymanych za pomocą metody HTTP POST. Jeśli atrybut formuarza method jest ustawiony na "post", formularz przesyła dane za jej pomocą.</p>
 <pre><code class="language-php"></code></pre>
