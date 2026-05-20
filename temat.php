@@ -9,7 +9,7 @@
                 include __DIR__ . "/tematy/$src/tresc/zadanie${i}_opis.php";
                 echo "<button class=\"check-task-btn\" data-task=\"$i\">Sprawdź zadanie</button>";
                 echo "<div class=\"solution-container\" id=\"wynik-zad$i\"></div>";
-                echo "<br><button class=\"show-code-btn\" data-task=\"$i\">Wyświetl kod</button><span id='code$i'></span>";
+                echo "<br><button class=\"show-code-btn\" data-task=\"$i\">Wyświetl kod</button><div id='code$i' class='resize-code-container'></div>";
                 echo '</section>';
             }
         ?>
@@ -94,7 +94,9 @@
     async function showCode(taskNumber) { 
         const response = await fetch(`showcode.php?src=${encodeURIComponent(srcPath)}&i=${taskNumber}`);
         const text = await response.text();
-        document.querySelector('#code' + taskNumber).innerHTML = text;
+        const codeElement = document.querySelector('#code' + taskNumber);
+        codeElement.innerHTML = text;
+        Prism.highlightAllUnder(codeElement);
     }
 
 

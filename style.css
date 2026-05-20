@@ -134,6 +134,15 @@ code{
     margin: 20px auto;
 }
 
+.resize-code-container{
+    margin: 0px;   
+}
+
+.resize-code-container :nth-child(1){
+    resize: vertical;
+    overflow: auto;
+}
+
 .green{
     color: #6A9955 !important;  
 }

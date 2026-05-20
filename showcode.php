@@ -4,7 +4,7 @@ $i   = intval($_GET['i']);
 $base = __DIR__ . "/tematy/$src";
 $file = "$base/rozwiazania/zadanie{$i}.php";
 
-echo '<pre><code class="language-php">';
+echo '<pre class="language-php"><code>';
 if (!file_exists($file)) {
     echo "Plik nie istnieje: $file";
     exit;
