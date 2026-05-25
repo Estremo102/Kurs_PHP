@@ -61,28 +61,28 @@
         <th>Opis</th>
     </tr>
     <tr>
-        <th>n+</th>
-        <th>Pasuje do dowolnego ciągu zawierającego co najmniej jedno n.</th>
+        <td>n+</td>
+        <td>Pasuje do dowolnego ciągu zawierającego co najmniej jedno n.</td>
     </tr>
     <tr>
-        <th>n*</th>
-        <th>Pasuje do dowolnego ciągu zawierającego zero lub więcej n.</th>
+        <td>n*</td>
+        <td>Pasuje do dowolnego ciągu zawierającego zero lub więcej n.</td>
     </tr>
     <tr>
-        <th>n?</th>
-        <th>Pasuje do dowolnego ciągu zawierającego jedno lub zero n.</th>
+        <td>n?</td>
+        <td>Pasuje do dowolnego ciągu zawierającego jedno lub zero n.</td>
     </tr>
     <tr>
-        <th>n{3}</th>
-        <th>Pasuje do dowolnego ciągu zawierającego sekwencję 3 n.</th>
+        <td>n{3}</td>
+        <td>Pasuje do dowolnego ciągu zawierającego sekwencję 3 n.</td>
     </tr>
     <tr>
-        <th>n{2, 5}</th>
-        <th>Pasuje do dowolnego ciągu zawierającego od 2 do 5 n.</th>
+        <td>n{2, 5}</td>
+        <td>Pasuje do dowolnego ciągu zawierającego od 2 do 5 n.</td>
     </tr>
     <tr>
-        <th>n{3,}</th>
-        <th>pasuje do dowolnego ciągu zawierającego sekwencję co najmniej 3 n.</th>
+        <td>n{3,}</td>
+        <td>pasuje do dowolnego ciągu zawierającego sekwencję co najmniej 3 n.</td>
     </tr>
 </table>
 <p>Zadanie: Napisz wyrażenie które ... [losowanie różnych opcji]</p>
