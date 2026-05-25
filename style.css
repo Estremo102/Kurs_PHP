@@ -324,3 +324,8 @@ table, tr, td {
 main section p {
     text-align: justify;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}

@@ -30,7 +30,6 @@ return [
         // ['title' => 'Klasy stałe', 'src' => 'Klasy_stale'],
         // ['title' => 'Klasy abstrakcyjne', 'src' => 'Klasy_abstrakcyjne'],
         // ['title' => 'Interfejsy', 'src' => 'Interfejsy'],
-        // ['title' => 'Interfejsy', 'src' => 'Interfejsy'],
         // ['title' => 'Cechy - trait', 'src' => 'trait'],
         // ['title' => 'Metody_statyczne', 'src' => 'Metody_statyczne'],
         // ['title' => 'Przestrzenie nazw - namespaces', 'src' => 'Namespaces'],
