@@ -39,7 +39,7 @@ echo "$x<br>";
     Twoim zadaniem jest napisanie funkcji oczyscTekst, która przyjmuje jeden parametr i modyfikuje go w następujący sposób: usuwa spacje z początku i końca tekstu, zamienia wiele spacji na jedną, zamienia cały tekst na małe litery. <br>
     Przykładowe rozwiązania: 
     <ol>
-        <li>trim + preg_replace (wymaga regex, który dopiero będziemy poznawać w przyszłych lekcjach) + strtolower</li>
+        <li>trim + preg_replace (wymaga <a href="?title=RegEx&src=RegEx">regex</a>, który dopiero będziemy poznawać w przyszłych lekcjach) + strtolower</li>
         <li>explode + array_filter + implode + strtolower</li>
     </ol>
     co robią powyższe funkcje?
