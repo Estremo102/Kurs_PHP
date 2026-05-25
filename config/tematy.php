@@ -14,6 +14,13 @@ return [
         ['title' => 'Zmienne superglobalne', 'src' => 'Zmienne_superglobalne'],
         ['title' => 'RegEx', 'src' => 'RegEx'],
     ],
+    'Formularze' => [
+        ['title' => 'Obsługa formularzy', 'src' => 'Obsluga_formularzy'],
+        // ['title' => 'Walidacja formularzy', 'src' => 'Walidacja_formularzy'],
+        // ['title' => 'Wymagane pola', 'src' => 'Wymagane_pola'],
+        // ['title' => 'Walidacja adresu E-mail i URL', 'src' => 'Walidacja_adresow'],
+        // ['title' => 'Podsumowanie', 'src' => 'Podsumowanie'],
+    ],
     'PHP + MySQL' => [
         ['title' => 'Połączenie z bazą danych', 'src' => 'polaczenie_z_baza_danych'],
         ['title' => 'Zapytania do bazy danych', 'src' => 'zapytania_do_bazy_danych'],
