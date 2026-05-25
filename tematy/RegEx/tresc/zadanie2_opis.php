@@ -30,31 +30,32 @@
     </tr>
     <tr>
         <td>[^abc]</td>
-        <td>znajduje dowolny znak nie znajdujący się między nawiasami</td>
+        <td>Znajduje dowolny znak nie znajdujący się między nawiasami.</td>
     </tr>
     <tr>
         <td>[a-z]</td>
-        <td></td>
+        <td>Znajduje dowolny znak alfabetyczny między dwiema literami.</td>
     </tr>
     <tr>
         <td>[A-z]</td>
-        <td></td>
+        <td>Znajduje dowolny znak alfabetyczny między określoną wielką literą, a określoną małą literą.</td>
     </tr>
     <tr>
         <td>[A-Z]</td>
-        <td></td>
+        <td>Znajduje dowolny znak alfabetyczny między dwiema wielkimi literami.</td>
     </tr>
     <tr>
         <td>[123]</td>
-        <td></td>
+        <td>Znajduje jedną lub wiele cyfr w nawiasach.</td>
     </tr>
     <tr>
         <td>[0-5]</td>
-        <td></td>
+        <td>Znajduje dowolne cyfry między dwiema liczbami.</td>
     </tr>
     <tr>
         <td>[0-9]</td>
-        <td></td>
+        <td>Znajduje dowonle cyfry.</td>
     </tr>
 </table>
 <pre><code class="language-php"></code></pre>
+<p>Zadanie: [todo napisz wyrażenie które ...]</p>
