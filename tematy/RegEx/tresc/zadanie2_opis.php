@@ -57,5 +57,4 @@
         <td>Znajduje dowonle cyfry.</td>
     </tr>
 </table>
-<pre><code class="language-php"></code></pre>
 <p>Zadanie: [todo napisz wyrażenie które ...]</p>
