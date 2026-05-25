@@ -28,3 +28,4 @@ echo preg_match_all("/lorem/i", $lorem);
 $lorem = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui fugit sunt asperiores repellendus, iure laborum veniam, totam harum quas libero perferendis officia, similique nulla beatae nam quam sint earum dolorem.';
 echo preg_match_all("/lorem/i", $lorem);
 ?></pre></code>
+<p>Zadanie:</p>
