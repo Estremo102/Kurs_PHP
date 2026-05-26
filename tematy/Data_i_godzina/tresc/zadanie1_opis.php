@@ -55,4 +55,4 @@ echo date("Y.m.d");
 "*USA (MM/DD/RRRR)",
 "*EUR (DD.MM.YYYY)",
 "*JIS (RRRR-MM-DD)"
-]) ?></p>
+]); ?></p>
