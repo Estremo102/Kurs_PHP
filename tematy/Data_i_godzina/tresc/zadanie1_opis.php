@@ -29,25 +29,35 @@
     </tr>
 </table>
 <p>
-    Przykładowo chcąc wyświetlić dzisiejszą datę w formacie rok.miesiąc.dzień można posłużyć poniższym kodem:
-    <pre><code class="language-php">echo date("Y.m.d")</code></pre>
+    Przykładowo chcąc wyświetlić dzisiejszą datę w formacie rok.miesiąc.dzień godzina:minuta:sekunda można posłużyć poniższym kodem:
+    <pre><code class="language-php">echo date("Y.m.d H:i:s");</code></pre>
     <pre><code><?php 
-echo date("Y.m.d");
+echo date("Y.m.d H:i:s");
 ?></code></pre>
 </p>
 <p>
     Najczęściej używane znaki do formatowania daty to: 
     <ul>
-        <li>d - dzień miesiąca (01-31)</li>
-        <li>j - dzień miesiąca (1-31)</li>
-        <li>m - miesiąc (01-12)</li>
+        <li>d - dzień miesiąca (01 - 31)</li>
+        <li>j - dzień miesiąca (1 - 31)</li>
+        <li>m - miesiąc (01 - 12)</li>
         <li>F - miesiąc (słownie)</li>
         <li>Y - rok</li>
         <li>l - dzień tygodnia</li>
     </ul>
     Znaki takie jak <code>/,.-</code> służą jako separatory w formatowaniu. 
 </p>
-<p>Zadanie: Wyświetl dzisiejszą datę w formacie <?php randomByUsername([
+<p>
+    Aby wyświetlić czas można posłużyć się następującymi znakami
+    <ul>
+        <li>H - godzina (00 - 23)</li>
+        <li>h - godzina (01 - 12)</li>
+        <li>i - minuty (00 - 59)</li>
+        <li>s - sekundy (00 - 59)</li>
+        <li>a - am/pm</li>
+    </ul>
+</p>
+<p>Zadanie: Wyświetl dzisiejszą datę i godzinę w formacie <?php randomByUsername([
 "*MDY (miesiąc, dzień, rok)",
 "*DMY (dzień, miesiąc, rok)",
 "*RMD (rok, miesiąc, dzień)",
@@ -55,4 +65,12 @@ echo date("Y.m.d");
 "*USA (MM/DD/RRRR)",
 "*EUR (DD.MM.YYYY)",
 "*JIS (RRRR-MM-DD)"
-]); ?></p>
+]); 
+echo ' ';
+randomByUsername([
+    "Godzina(format 24h):Minuta:sekunda",
+    "Godzina(format 24h):Minuta",
+    "Godzina(format 12h):Minuta:sekunda am/pm",
+    "Godzina(format 12h):Minuta am/pm",
+]);
+?></p>
