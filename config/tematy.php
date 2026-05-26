@@ -21,6 +21,9 @@ return [
         // ['title' => 'Walidacja adresu E-mail i URL', 'src' => 'Walidacja_adresow'],
         // ['title' => 'Podsumowanie', 'src' => 'Podsumowanie'],
     ],
+    'Więcej o PHP' => [
+        ['title' => 'Data i godzina', 'src' => 'Data_i_godzina'],
+    ],
     'Programowanie obiektowe w PHP' => [
         ['title' => 'OOP', 'src' => 'OOP'],
         // ['title' => 'Klasy i obiekty', 'src' => 'Klasy_i_obiekty'],
