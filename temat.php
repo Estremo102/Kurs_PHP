@@ -2,17 +2,18 @@
     $title = $_GET['title'] ?? null;
     $src = $_GET['src'] ?? null;
 ?>
-        <?php
-            for ($i = 1; $i <= 6; $i++) {
-                echo "<section id=\"zadanie$i\">
-                <h2>Zadanie $i</h2>";
-                include __DIR__ . "/tematy/$src/tresc/zadanie${i}_opis.php";
-                echo "<button class=\"check-task-btn\" data-task=\"$i\">Sprawdź zadanie</button>";
-                echo "<div class=\"solution-container\" id=\"wynik-zad$i\"></div>";
-                echo "<br><button class=\"show-code-btn\" data-task=\"$i\">Wyświetl kod</button><div id='code$i' class='resize-code-container'></div>";
-                echo '</section>';
-            }
-        ?>
+<?php require_once 'randomByUsername.php'?>
+<?php
+    for ($i = 1; $i <= 6; $i++) {
+        echo "<section id=\"zadanie$i\">
+        <h2>Zadanie $i</h2>";
+        include __DIR__ . "/tematy/$src/tresc/zadanie${i}_opis.php";
+        echo "<button class=\"check-task-btn\" data-task=\"$i\">Sprawdź zadanie</button>";
+        echo "<div class=\"solution-container\" id=\"wynik-zad$i\"></div>";
+        echo "<br><button class=\"show-code-btn\" data-task=\"$i\">Wyświetl kod</button><div id='code$i' class='resize-code-container'></div>";
+        echo '</section>';
+    }
+?>
 <script defer>
     const srcPath = new URLSearchParams(window.location.search).get('src');
 

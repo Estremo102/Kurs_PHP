@@ -1,13 +1,12 @@
-<?php require_once 'randomByUsername.php'?>
 <h3>date()</h3>
 <h4>Funkcje czasu</h4>
 <p>
     PHP ma wbudowane funkcje daty i godziny. W tym temacie omówimy sobie podstawowe funckcje do pracy z czasem: <br>
     <ul>
         <li>date() - formatuje datę</li>
-        <li>mktime()</li>
+        <li>time() - zwraca Unixowy znacznik czasu dla momentu wywołania, czyli ilość sekund od 1 stycznia 1970 do teraz.</li>
+        <li>mktime() - zwraca Uniksowy znacznik czasu dla określonej daty.</li>
         <li>strtotime()</li>
-        <li>time()</li>
         <li>date_default_timezone_set()</li>
         <li>date_default_timezone_get()</li>
     </ul>
