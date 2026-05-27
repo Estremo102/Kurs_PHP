@@ -6,7 +6,7 @@
         <li>date() - formatuje datę</li>
         <li>time() - zwraca Unixowy znacznik czasu dla momentu wywołania, czyli ilość sekund od 1 stycznia 1970 do teraz.</li>
         <li>mktime() - zwraca Uniksowy znacznik czasu dla określonej daty.</li>
-        <li>strtotime()</li>
+        <li>strtotime() - konwertuje angielski tekstowy ciąg daty na znacznik czasu Unix</li>
         <li>date_default_timezone_set()</li>
         <li>date_default_timezone_get()</li>
     </ul>
