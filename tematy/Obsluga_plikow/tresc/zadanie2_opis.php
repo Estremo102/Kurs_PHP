@@ -16,6 +16,7 @@
 </ul>
 <pre><code class="language-php">echo readfile("navbox.php");</code></pre>
 <div><?php echo readfile("navbox.php");?></div>
+<p>Jak możesz zauważyć poza zawartością pliku wyświetloną przez readfile, echo wypisało ilość oczytanych bajtów, ponieważ jest to informacja jaką ta funkcja zwraca.</p>
 <p>Zadanie: wyświetl zawartość pliku <?php
 $tematy = include __DIR__ . '/../../../config/tematy.php';
 $tablica = [];
