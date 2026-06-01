@@ -23,6 +23,7 @@ return [
     ],
     'Więcej o PHP' => [
         ['title' => 'Data i godzina', 'src' => 'Data_i_godzina'],
+        ['title' => 'Obsługa plików', 'src' => 'Obsloga_plikow'],
     ],
     'Programowanie obiektowe w PHP' => [
         ['title' => 'OOP', 'src' => 'OOP'],
