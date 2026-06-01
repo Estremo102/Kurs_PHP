@@ -47,7 +47,7 @@ $myfile = fopen("tematy/Obsluga_plikow/plik.txt", "r") or die("Error: Nie można
 echo fread($myfile, filesize("tematy/Obsluga_plikow/plik.txt"));
 fclose($myfile);
 ?></code></pre>
-<p>Zadanie: Umieść plik user.txt w folderze z rozwiązaniami, zapisz w nim swoje imie i nazwisko, a następnie napisz kod który otworzy plik w trybie <?php randomByUsername(
+<p>Zadanie: Umieść plik user.txt w folderze z rozwiązaniami, zapisz w nim swoje imie i nazwisko, a następnie napisz kod który jedynie otworzy plik w trybie <?php randomByUsername(
 ['r'],
 ['r+'],
 ['w'],
