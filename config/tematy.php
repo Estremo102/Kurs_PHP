@@ -6,6 +6,7 @@ return [
         ['title' => 'Konwersja typów', 'src' => 'konwersja_typow'],
         ['title' => 'Funkcje matematyczne', 'src' => 'Funkcje_matematyczne'],
         ['title' => 'Stałe w PHP', 'src' => 'Stale'],
+        // ['title' => 'Operatory', 'src' => 'Operatory'],
         ['title' => 'Instrukcje warunkowe', 'src' => 'Instrukcje_warunkowe'],
         ['title' => 'Pętle', 'src' => 'Petle'],
         ['title' => 'Funkcje', 'src' => 'Funkcje'],
