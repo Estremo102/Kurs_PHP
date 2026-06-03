@@ -4,4 +4,3 @@
 <?php $myfile = fopen('tematy\Obsluga_plikow\\'. date("Y.m.d_His").".txt", "w"); ?>
 <p>Powyższy kod tworzy podczas otwarcia strony plik z nazwą wskazującą datę i godzinę jej otwarcia.</p>
 <p>Zadanie: Napisz kod, który w folderze rozwiazania utworzy plik txt z nazwą zwróconą przez funkcję <code>get_current_user();</code>.</p>
-<?php $myfile = fopen('tematy\Obsluga_plikow\rozwiazania\\'. get_current_user().".txt", "w"); ?>
