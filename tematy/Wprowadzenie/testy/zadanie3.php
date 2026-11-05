@@ -2,7 +2,7 @@
     if ($output == "") {
         $komunikaty[] = "Nie wypisano danych";
     } else {
-        $poprawne = strtolower($output) == "2";
+        $poprawne = $output == "2";
         if (!$poprawne) {
             $komunikaty[] = "Wypisano $output zamiast wyniku 2 + '2' - 2";
         }
