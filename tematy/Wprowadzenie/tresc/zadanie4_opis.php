@@ -14,7 +14,7 @@
 <p>Aby uzyskać typ danych zmiennej, należy użyć funkcji var_dump().</p>
 <pre><code class="language-php">&lt?php
     var_dump(5) . "&ltbr&gt";
-    var_dump("John") . "&ltbr&gt";
+    var_dump("Jasiek") . "&ltbr&gt";
     var_dump(3.14) . "&ltbr&gt";
     var_dump(true) . "&ltbr&gt";
     var_dump([2, 3, 56]) . "&ltbr&gt";
@@ -23,12 +23,12 @@
 <p>wynik działania powyższego kodu:</p>
 <pre><?php
         var_dump(5) . "<br>";
-        var_dump("John") . "<br>";
+        var_dump("Jasiek") . "<br>";
         var_dump(3.14) . "<br>";
         var_dump(true) . "<br>";
         var_dump([2, 3, 56]) . "<br>";
         var_dump(NULL) . "<br>";
     ?>
 </pre>
-<p>Twoim zadaniem jest wyświetlenie typu danych tablicy która będzie zawierać wszystkie zmienne z powyższego przykładu z pominięciem tablicy</p>
+<p>Twoim zadaniem jest wyświetlenie typu danych tablicy której elementy to będą wszystkie wartości z powyższego przykładu z pominięciem tablicy</p>
                 
