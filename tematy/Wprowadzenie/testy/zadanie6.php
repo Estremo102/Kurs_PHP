@@ -10,7 +10,7 @@
         $oczekiwany = "1\n3\n6";
         $poprawne = ($clean_output == $oczekiwany);
         if (!$poprawne) {
-            $komunikaty[] = "Błąd! Wypisano: " . htmlspecialchars($output) . " – upewnij się, że liczby 1, 3, 6 są oddzielone znacznikami <br>.";
+            $komunikaty[] = "Błąd! Wypisano: " . htmlspecialchars($output) . " upewnij się, że liczby 1, 3, 6 są oddzielone znacznikami <br>.";
         }
     }
     $komunikaty[] = $poprawne ? 'Zadanie wykonane' : 'Zadanie niewykonane';
