@@ -7,10 +7,10 @@
 </ul>
 <p>Twoim zadaniem jest uzupełnienie poniższego kodu, poprzez utowrzenie zmiennej globalnej $x i przypisanie jej wartości 3 oraz zmiennej $x lokalnej wewnątrz funkcji i przypisanie jej wartości 5</p>
 <pre><code class="language-php">&lt;?php
-    function Test1() {
-      echo "<p>Zmienna x wewnątrz funkcji wynosi: $x</p>";
-    }
-    Test1();
-    
-    echo "<p>Zmienna x na zewnątrz funkcji wynosi: $x</p>";
+function Test1() {
+  echo "<p>Zmienna x wewnątrz funkcji wynosi: $x&lt;br&gt;</p>";
+}
+Test1();
+
+echo "<p>Zmienna x na zewnątrz funkcji wynosi: $x</p>";
 ?&gt;</code></pre>
