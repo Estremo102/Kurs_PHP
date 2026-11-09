@@ -337,6 +337,10 @@ main section p {
     text-align: justify;
 }
 
+main section p.course-progress {
+    text-align: left;
+}
+
 img {
     max-width: 100%;
     height: auto;

@@ -28,13 +28,15 @@
     function updateLocalStorage() {
         let buttons = document.querySelectorAll('nav ul li');
         for (let i = 0; i < buttons.length; i++) {
+            const key = `${srcPath}_zadanie${i + 1}`;
+            localStorage.removeItem(i + 'exercise');
             if (buttons[i].classList.contains('done')) {
-                if (localStorage.getItem(i + 'exercise') !== 'true') {
+                if (localStorage.getItem(key) !== 'true') {
                     buttons[i].classList.add('changed');
                 }
-                localStorage.setItem(i + 'exercise', 'true');
+                localStorage.setItem(key, 'true');
             } else {
-                localStorage.setItem(i + 'exercise', 'false');
+                localStorage.setItem(key, 'false');
             }
         }
     }
