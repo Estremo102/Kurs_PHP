@@ -31,7 +31,7 @@
                 }
             }
         });
-        document.getElementById('course-progress').value = done;
+        animateProgress(document.getElementById('course-progress'), done);
         const percent = total ? Math.round(done / total * 100) : 0;
         document.getElementById('course-progress-text').textContent = `${done} / ${total} zadań (${percent}%)`;
     })();

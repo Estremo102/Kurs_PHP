@@ -18,6 +18,19 @@ $active = $_GET['src'] ?? '';
     <?php endforeach; ?>
 </aside>
 <script>
+    function animateProgress(progress, target, duration = 800) {
+        cancelAnimationFrame(progress._animId);
+        const start = progress.value;
+        const startTime = performance.now();
+        function step(now) {
+            const t = Math.min((now - startTime) / duration, 1);
+            const eased = 1 - Math.pow(1 - t, 3);
+            progress.value = start + (target - start) * eased;
+            if (t < 1) progress._animId = requestAnimationFrame(step);
+        }
+        progress._animId = requestAnimationFrame(step);
+    }
+
     function updateSidebarProgress() {
         document.querySelectorAll('aside progress.topic-progress').forEach(progress => {
             let done = 0;
@@ -26,7 +39,7 @@ $active = $_GET['src'] ?? '';
                     done++;
                 }
             }
-            progress.value = done;
+            animateProgress(progress, done);
         });
     }
     updateSidebarProgress();

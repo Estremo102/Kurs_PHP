@@ -21,7 +21,7 @@
         const doneCount = document.querySelectorAll('nav ul li.done').length;
         const progressBar = document.querySelector('nav progress');
         if (progressBar) {
-            progressBar.value = doneCount;
+            animateProgress(progressBar, doneCount);
         }
     }
 
