@@ -41,6 +41,7 @@ $active = $_GET['src'] ?? '';
                     done++;
                 }
             }
+            progress.closest('li').classList.toggle('done', done === Number(progress.max));
             if (animate) {
                 animateProgress(progress, done);
             } else {
