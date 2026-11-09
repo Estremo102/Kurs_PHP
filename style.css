@@ -188,6 +188,22 @@ code{
     100% { transform: scale(1); }
 }
 
+.failed{
+    animation: shake-fade 3.5s ease-out 1 forwards;
+}
+
+@keyframes shake-fade {
+    0%    { background-color: #e74c3c; transform: translateX(0); }
+    2%    { transform: translateX(-4px); }
+    4%    { transform: translateX(4px); }
+    6%    { transform: translateX(-4px); }
+    8%    { transform: translateX(4px); }
+    10%   { transform: translateX(-2px); }
+    12%   { transform: translateX(2px); }
+    14.3% { background-color: #e74c3c; transform: translateX(0); }
+    100%  { background-color: transparent; transform: translateX(0); }
+}
+
 .pink{
     color: #C586C0;  
 }

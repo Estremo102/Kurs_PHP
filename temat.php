@@ -89,11 +89,16 @@
             }
 
             const navButtons = document.querySelectorAll('nav ul li');
-            if (navButtons[taskNumber - 1]) {
+            const button = navButtons[taskNumber - 1];
+            if (button) {
                 if (data.poprawne) {
-                    navButtons[taskNumber - 1].classList.add('done');
+                    button.classList.remove('failed');
+                    button.classList.add('done');
                 } else {
-                    navButtons[taskNumber - 1].classList.remove('done');
+                    button.classList.remove('done', 'changed', 'failed');
+                    void button.offsetWidth;
+                    button.classList.add('failed');
+                    button.addEventListener('animationend', () => button.classList.remove('failed'), { once: true });
                 }
             }
 
