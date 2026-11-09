@@ -24,7 +24,7 @@ function myfunction() {
 }
 
 myfunction()</code></pre>
-<code><pre><span class="error">Fatal error: Cannot redeclare myfunction() ...</span></pre></code>
+<code><pre><span class="error">Warning: Undefined variable $x ...</span></pre></code>
 <p>Zmienne utworzone wewnątrz funkcji należą tylko do tej funkcji, ale można tworzyć zmienne globalne wewnątrz funkcji, korzystając ze składni $GLOBALS.</p>
 <pre><code class="language-php">$x = 10;
 $y = 20;
@@ -46,3 +46,4 @@ function result() {
 result();
 echo $z;
 ?></code></pre>
+<p><span class="important">Zadanie: </span> W kodzie masz dostęp do zmiennych $a i $b. Napisz funkcję suma() bez parametrów, która za pomocą $GLOBALS utworzy zmienną globalną $wynik równą sumie $a i $b. Nie używaj słowa kluczowego global. Wywołaj funkcję, a następnie wyświetl $wynik.</p>

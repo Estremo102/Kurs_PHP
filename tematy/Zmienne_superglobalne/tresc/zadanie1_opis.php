@@ -32,19 +32,9 @@
         </li>
     </ul>
 </p>
-<p><span class="improtant">Zadanie: </span> Za pomocą pętli foreach i var_dump sprawdź zawartość zmiennej superglobalnej 
+<p><span class="important">Zadanie: </span> Za pomocą pętli foreach i var_dump sprawdź zawartość zmiennej superglobalnej 
 <?php
-$superglobalne = [
-'$GLOBALS',
-'$_SERVER',
-'$_REQUEST', 
-'$_POST',
-'$_GET',
-'$_FILES',
-'$_ENV',
-'$_COOKIE',
-'$_SESSION'
-];
+include __DIR__ . '/../dane/zadanie1.php';
 $username = get_current_user();
 echo $superglobalne[hexdec(substr(hash('sha256', $username), 0, 8)) % count($superglobalne)];
 if (isset($_GET['username']) && $_GET['username'] !== '') {
@@ -53,6 +43,7 @@ if (isset($_GET['username']) && $_GET['username'] !== '') {
     echo '<br>'. $superglobalne[$index];
 }
 ?></p>
+<p>Niektóre zmienne, np. $_POST czy $_FILES, mogą być puste i pętla nic nie wyświetli. To też jest poprawny wynik. Jeśli wylosowałeś $_SESSION, przed pętlą wywołaj funkcję session_start(), która uruchamia sesję.</p>
 <p>Przypomnienie foreach: </p>
 <pre><code class="language-php">foreach ($zbior_danych as $zmienna_ze_zbioru) {
     // ...

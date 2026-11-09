@@ -1,5 +1,5 @@
 <h3>$_COOKIE</h3>
-<h4>$_REQUEST</h3>
+<h4>$_REQUEST</h4>
 <p>zmienna $_REQUEST zawiera dane z przesyłanych formularzy, ciągi zapytań URL i pliki cookie HTTP, czyli jest to tablica zawierająca dane z $_GET, $_POST oraz $_COOKIE. Jest to wygodna opcja, jednak może stwarzać luki w zabezpieczeniach, dlatego lepiej używać $_COOKIE, $_POST i $_GET</p>
 <h4>$_COOKIE</h4>
 <p>
@@ -25,4 +25,10 @@
         <li>httponly - określa czy plik ma być dostępny tylko za pośrednictwem HTTP</li>
     </ul>
 </p>
-<pre><code class="language-php"></code></pre>
+<p>Przykład: ciasteczko "jezyk" ważne przez godzinę i jego odczyt:</p>
+<pre><code class="language-php">setcookie("jezyk", "pl", time() + 3600);
+
+if (isset($_COOKIE["jezyk"])) {
+    echo "Wybrany język: " . $_COOKIE["jezyk"];
+}</code></pre>
+<p><span class="important">Zadanie: </span> Za pomocą setcookie() utwórz ciasteczko o nazwie "uzytkownik" z wartością swojego imienia, ważne 1 dzień (time() + 86400). Następnie, jeśli ciasteczko istnieje w $_COOKIE, wyświetl "Witaj, {wartość}", w przeciwnym wypadku "Ciasteczko nie zostało jeszcze ustawione". Uwaga: przeglądarka odeśle ciasteczko dopiero przy kolejnym żądaniu, więc będzie ono widoczne po ponownym sprawdzeniu zadania lub odświeżeniu strony.</p>
