@@ -57,4 +57,8 @@
         <td>Znajduje dowonle cyfry.</td>
     </tr>
 </table>
-<p>Zadanie: [todo napisz wyrażenie które ...]</p>
+<p>Zadanie: Napisz wyrażenie regularne i zapisz je w zmiennej $wzorzec. Wyrażenie ma znaleźć w tekście ocenę szkolną zapisaną w postaci "ocena: X", gdzie X to cyfra od 1 do 6, bez względu na wielkość liter.</p>
+<ul>
+    <li>Pasuje: "Twoja ocena: 5", "OCENA: 1", "Ocena: 6!"</li>
+    <li>Nie pasuje: "ocena: 7", "ocena: 0", "ocena 5"</li>
+</ul>

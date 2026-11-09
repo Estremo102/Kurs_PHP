@@ -39,3 +39,6 @@ $input = [
 $result = preg_grep("/cisco/i", $input);
 print_r($result);
 ?></code></pre>
+<p>Zadanie: W kodzie masz dostęp do zmiennej $lista z nazwami owoców oddzielonymi przecinkami, średnikami lub spacjami (również kilkoma naraz):</p>
+<pre><code class="language-php">$lista = "jabłko, gruszka;śliwka  banan;;wiśnia,malina truskawka";</code></pre>
+<p>Za pomocą preg_split() podziel ją na tablicę $owoce (bez pustych elementów), a następnie za pomocą preg_grep() wybierz z niej owoce kończące się na literę "a" i zapisz je w tablicy $na_a.</p>

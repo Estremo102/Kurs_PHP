@@ -8,4 +8,6 @@ echo preg_replace($pattern, "San Francisco", $str);</code></pre>
     $pattern = "/ściernisko/i";
     echo preg_replace($pattern, "San Francisco", $str); 
 ?></code></pre>
-<p>Zadanie: Funkcje 4 ale regexem</p>
+<p>Zadanie: Wykonaj podobne zadanie jak w temacie Funkcje, ale za pomocą wyrażeń regularnych. W kodzie masz dostęp do zmiennej $tekst:</p>
+<pre><code class="language-php">$tekst = "   Ala   ma    kota   ";</code></pre>
+<p>Za pomocą preg_replace() usuń spacje z początku i końca tekstu oraz zamień wielokrotne spacje na jedną. Wynik zapisz w zmiennej $oczyszczony. Nie używaj funkcji trim(), explode(), implode() ani str_replace().</p>

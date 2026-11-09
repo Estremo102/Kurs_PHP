@@ -28,4 +28,6 @@ echo preg_match_all("/lorem/i", $lorem);
 $lorem = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui fugit sunt asperiores repellendus, iure laborum veniam, totam harum quas libero perferendis officia, similique nulla beatae nam quam sint earum dolorem.';
 echo preg_match_all("/lorem/i", $lorem);
 ?></pre></code>
-<p>Zadanie:</p>
+<p>Zadanie: W kodzie masz dostęp do zmiennej $tekst:</p>
+<pre><code class="language-php">$tekst = "Zamówienie nr 4521 z dnia 12.03.2024 zawiera 3 produkty o łącznej wartości 59 zł.";</code></pre>
+<p>Za pomocą preg_match_all() policz, ile jest w nim liczb (ciągów cyfr), i zapisz wynik w zmiennej $ile_liczb. Następnie za pomocą preg_match() sprawdź, czy tekst zawiera liczbę czterocyfrową (dokładnie 4 cyfry, a nie fragment dłuższej liczby), i zapisz wynik w zmiennej $czy_rok.</p>

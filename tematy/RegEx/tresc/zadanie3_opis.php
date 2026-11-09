@@ -85,4 +85,12 @@
         <td>pasuje do dowolnego ciągu zawierającego sekwencję co najmniej 3 n.</td>
     </tr>
 </table>
-<p>Zadanie: Napisz wyrażenie które ... [losowanie różnych opcji]</p>
+<?php
+include __DIR__ . '/../dane/zadanie3.php';
+$opcja = $opcje_regex[hexdec(substr(hash('sha256', get_current_user()), 0, 8)) % count($opcje_regex)];
+?>
+<p>Zadanie: Napisz wyrażenie regularne i zapisz je w zmiennej $wzorzec. Wyrażenie ma dopasować cały tekst (użyj ^ i $), jeśli jest to <?php echo $opcja['opis']; ?>.</p>
+<ul>
+    <li>Pasuje: <?php echo htmlspecialchars('"' . implode('", "', array_slice($opcja['pasuje'], 0, 2)) . '"'); ?></li>
+    <li>Nie pasuje: <?php echo htmlspecialchars('"' . implode('", "', array_slice($opcja['nie_pasuje'], 0, 3)) . '"'); ?></li>
+</ul>

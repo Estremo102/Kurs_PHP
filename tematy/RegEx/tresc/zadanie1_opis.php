@@ -15,4 +15,6 @@
     Tutaj <code>/</code> jest ogranicznikiem, <code>zsht</code> jest wzorcem, a <code>i</code> modyfikatorem. <br>
     ogranicznik może byćdowolnym znakiem który nie jest liczbą, literą backslashashem lub spacją. Najczęstrzym ograncznikiem jest slash, ale gdy potrzeba go użyć we wzorcu, wtedy można użyć innych znaków takich jak # lub ~.
 </p>
-<p>Zadanie: todo zamiana ograniczników / na ~ lub # w gotowym wyrażeniu regularnym zawierającym slash.</p>
+<p>Zadanie: W kodzie masz dostęp do zmiennej $stary z wyrażeniem regularnym, które sprawdza, czy ścieżka do pliku zaczyna się od tematy/RegEx/rozwiazania/:</p>
+<pre><code class="language-php">$stary = "/^tematy\/RegEx\/rozwiazania\//";</code></pre>
+<p>Ponieważ ogranicznikiem jest slash, każdy slash we wzorcu trzeba poprzedzić backslashem. Utwórz zmienną $nowy z tym samym wzorcem, ale użyj ogranicznika # lub ~, dzięki czemu slashe we wzorcu nie będą wymagały backslasha.</p>
