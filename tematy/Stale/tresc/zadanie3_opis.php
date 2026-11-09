@@ -7,4 +7,4 @@ echo CARS[0];
 // Using const
 const ANIMALS = array("Cat", "Dog", "Horse");
 echo ANIMALS[1];</code></pre></p>
-<p>Twoim zadaniem jest utworzenie stałej tablicowej, a następnie próba modyfikacji jednej z jej komórek i jej wyświetlenie. Jeśli to nie możliwe, zakomentuj linijkę która powoduje błąd. Zwróć uwagę czy to jest możliwe oraz porównaj zachowanie ze stałymi tablicami w JS.</p>
+<p>Twoim zadaniem jest utworzenie stałej tablicowej, a następnie próba zmiany wartości jednej z jej komórek (np. <code>CARS[0] = "Audi";</code>). Jeśli spowoduje to błąd, zakomentuj linijkę, która go powoduje, i wyświetl wybraną komórkę tablicy. Porównaj to zachowanie ze stałymi tablicami w JS.</p>
