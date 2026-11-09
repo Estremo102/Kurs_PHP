@@ -11,12 +11,26 @@ $active = $_GET['src'] ?? '';
                     <a href="index.php?title=<?= urlencode($t['title']) ?>&src=<?= urlencode($t['src']) ?>">
                         <?= htmlspecialchars($t['title']) ?>
                     </a>
+                    <progress class="topic-progress" data-src="<?= htmlspecialchars($t['src']) ?>" value="0" max="6"></progress>
                 </li>
             <?php endforeach; ?>
         </ul>
     <?php endforeach; ?>
 </aside>
 <script>
+    function updateSidebarProgress() {
+        document.querySelectorAll('aside progress.topic-progress').forEach(progress => {
+            let done = 0;
+            for (let i = 1; i <= progress.max; i++) {
+                if (localStorage.getItem(`${progress.dataset.src}_zadanie${i}`) === 'true') {
+                    done++;
+                }
+            }
+            progress.value = done;
+        });
+    }
+    updateSidebarProgress();
+
     (function () {
         const aside = document.querySelector('aside');
         const active = aside.querySelector('li.active');

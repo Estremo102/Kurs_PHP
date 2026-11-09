@@ -105,6 +105,25 @@ aside ul li {
     color: #EDEEFF;
     text-align: center;
     font-weight: 900;
+    position: relative;
+    overflow: hidden;
+}
+
+aside ul li progress.topic-progress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #02074d55;
+    display: block;
+}
+
+aside ul li progress.topic-progress::-webkit-progress-bar {
+    background-color: #02074d55;
 }
 
 aside h3 {

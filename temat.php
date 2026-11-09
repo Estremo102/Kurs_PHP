@@ -39,6 +39,7 @@
                 localStorage.setItem(key, 'false');
             }
         }
+        updateSidebarProgress();
     }
 
     async function runSingleTest(taskNumber) {
