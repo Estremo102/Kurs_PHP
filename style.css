@@ -78,8 +78,8 @@ aside{
 }
 
 .navbox ~ .content aside{
-    top: 40px;
-    height: calc(100vh - 40px);
+    top: 45px;
+    height: calc(100vh - 45px);
 }
 
 main{
@@ -202,13 +202,14 @@ code{
     background-color: #363a75;
     position: sticky;
     top: 0;
-    height: 40px;
+    height: 45px;
+    z-index: 10;
 }
 
 aside div{
     position: sticky;
     height: auto;
-    top: 40px;
+    top: 45px;
     font-weight: 900;
     font-size: 20px;
     padding: 1.5%;
