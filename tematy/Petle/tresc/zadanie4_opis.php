@@ -105,4 +105,4 @@ $colors = array("red", "green", "blue", "yellow");
 foreach ($colors as $x) :
   echo "$x <br>";
 endforeach;?></code></pre>
-<p>Zadanie: W kodzie masz dostęp do zmiennej $input. Wypisz wszystkie elementy jakie się w niej znajdują.</p>
+<p>Zadanie: W kodzie masz dostęp do zmiennej $input. Może to być tablica indeksowana, tablica asocjacyjna lub obiekt. Za pomocą pętli foreach wypisz wszystkie elementy, jakie się w niej znajdują, każdy w osobnej linii (np. oddzielając je znacznikiem &lt;br&gt;). Możesz wypisać samą wartość lub klucz i wartość w formacie "klucz: wartość".</p>

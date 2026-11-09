@@ -35,5 +35,5 @@ do {
   echo $i;
   $i++;
 } while ($i < 6);?></code></pre>
-<p>Zadanie: w kodzie masz dostęp do zmiennej $liczba, do której jest przypisana losowa wartość od 1 do 10. Napisz pętle która wypisze wylosowaną liczbę, a następnie dopóki liczba zwiększona o 1 będzie mniejsza lub równa 8 powtórzy operację wypisania i inkrementacji. </p>
+<p>Zadanie: w kodzie masz dostęp do zmiennej $liczba, do której jest przypisana losowa wartość od 1 do 10. Napisz pętlę do...while, która wypisze wartość $liczba i zwiększy ją o 1. Powtarzaj to, dopóki $liczba jest mniejsza lub równa 8. Jeśli wylosowana liczba jest większa od 8, zostanie wypisana tylko raz. Każdą liczbę wypisz w osobnej linii (np. oddzielając je znacznikiem &lt;br&gt;).</p>
 <?php $i = $tempi?>

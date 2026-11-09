@@ -1,27 +1,20 @@
 <?php
-if (!isset($wyniki) || !is_array($wyniki)) {
-    $komunikaty[] = "Nie utworzono tablicy \$wyniki.";
-    return;
-}
-
-if (count($wyniki) !== 25) {
-    $komunikaty[] = "Tablica \$wyniki powinna zawierać 25 elementów, a zawiera: " . count($wyniki);
-    return;
-}
-
-$oczekiwane = [];
-for ($i = 1; $i <= 5; $i++) {
-    for ($j = 1; $j <= 5; $j++) {
-        $oczekiwane[] = $i * $j;
+    $typy_tokenow = array_column(array_filter(token_get_all(file_get_contents($rozw)), 'is_array'), 0);
+    $oczekiwane = [];
+    for ($i = 1; $i <= 5; $i++) {
+        for ($j = 1; $j <= 5; $j++) {
+            $oczekiwane[] = $i * $j;
+        }
     }
-}
-
-if ($wyniki === $oczekiwane) {
-    $poprawne = true;
-    $komunikaty[] = "Zadanie wykonane poprawnie.";
-} else {
-    $komunikaty[] = "Niepoprawna zawartość tablicy \$wyniki.";
-    $komunikaty[] = "Otrzymano: " . implode(", ", $wyniki);
-    $komunikaty[] = "Oczekiwano: " . implode(", ", $oczekiwane);
-}
+    if (count(array_keys($typy_tokenow, T_FOR)) < 2) {
+        $komunikaty[] = "Użyj dwóch zagnieżdżonych pętli for";
+    } elseif (!isset($wyniki) || !is_array($wyniki)) {
+        $komunikaty[] = "Nie utworzono tablicy \$wyniki";
+    } else {
+        $poprawne = $wyniki == $oczekiwane;
+        if (!$poprawne) {
+            $komunikaty[] = "Niepoprawna zawartość tablicy \$wyniki. Otrzymano: " . htmlspecialchars(implode(", ", array_map('json_encode', $wyniki))) . ", oczekiwano: " . implode(", ", $oczekiwane);
+        }
+    }
+    $komunikaty[] = $poprawne ? 'Zadanie wykonane' : 'Zadanie niewykonane';
 ?>
