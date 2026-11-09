@@ -9,5 +9,6 @@ Dany jest poniższy kod PHP:
     $f = array("Volvo", "BMW", "Toyota"); // tablica indeksowana (klucze numeryczne od 0)
     $g = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43"); // tablica asocjacyjna (klucze tekstowe/nazwane)
 ?&gt;</code></pre>
+<p>Zmienne są już zdefiniowane, nie musisz ich tworzyć.</p>
 <p>Zrzutuj dane do obiektów i wyświetl wartości zmiennych <code>$a</code>, <code>$b</code>, <code>$c</code>, <code>$d</code>, <code>$e</code>, <code>$f</code> i <code>$g</code> po konwersji.</p>
 <p>Użyj funkcji <code>var_dump()</code>, aby wyświetlić zarówno typ, jak i wartość każdej zmiennej po konwersji. Następnie przeanalizuj wyniki.</p>

@@ -1,16 +1,21 @@
-<?phpif (!isset($x_converted)) {
-    $komunikaty[] = "Zmienna \$x_converted nie istnieje";
-} else {
-    if ($x_converted == (int)$x) {
-        $poprawne = true;
-        $komunikaty[] = "Zadanie wykonane poprawnie";
-    } else {
-        $komunikaty[] = "Błąd konwersji. Oczekiwano: ". (int)$x . ", otrzymano: ". $x_converted;
+<?php
+    $tokeny = token_get_all(file_get_contents($rozw));
+    $uzyto_rzutowania = false;
+    $uzyto_intval = false;
+    foreach ($tokeny as $token) {
+        if (!is_array($token)) continue;
+        if ($token[0] == T_INT_CAST) $uzyto_rzutowania = true;
+        if ($token[0] == T_STRING && strtolower($token[1]) == 'intval') $uzyto_intval = true;
     }
-}
-
-return [
-    'poprawne' => $poprawne,
-    'komunikaty' => $komunikaty
-];
+    if (!isset($x_converted)) {
+        $komunikaty[] = "Nie utworzono zmiennej \$x_converted";
+    } elseif ($uzyto_intval || !$uzyto_rzutowania) {
+        $komunikaty[] = "Użyj operatora rzutowania (int) zamiast funkcji intval()";
+    } else {
+        $poprawne = $x_converted === (int)$x;
+        if (!$poprawne) {
+            $komunikaty[] = "Błąd konwersji. Oczekiwano: " . (int)$x . " (int), otrzymano: " . htmlspecialchars(var_export($x_converted, true)) . " (" . gettype($x_converted) . ")";
+        }
+    }
+    $komunikaty[] = $poprawne ? 'Zadanie wykonane' : 'Zadanie niewykonane';
 ?>

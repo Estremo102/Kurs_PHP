@@ -1,11 +1,11 @@
 <?php
-$aa = 5;
-$bb = 5.34;
-$cc = 0;
-$dd = -1;
-$ee = 0.1;
-$ff = "hello";
-$gg = "";
-$hh = true;
-$ii = NULL;
+$a = 5;
+$b = 5.34;
+$c = 0;
+$d = -1;
+$e = 0.1;
+$f = "hello";
+$g = "";
+$h = true;
+$i = NULL;
 ?>

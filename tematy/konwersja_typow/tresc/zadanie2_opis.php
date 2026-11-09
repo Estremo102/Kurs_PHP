@@ -12,9 +12,9 @@
     <li>(bool) - Konwertuje na typ danych Boolean</li>
     <li>(array) - Konwertuje na typ danych Array</li>
     <li>(object) - Konwertuje na typ danych Object</li>
-    <li>(unset) - Przestarzałe. Konwertuje na typ danych NULL</li>
+    <li>(unset) - Konwertował na typ danych NULL, usunięty w PHP 8.0</li>
 </ul>
 <p>
     Twoim zadaniem jest napisanie skryptu PHP, który zrobi to samo co funkcja intval(), przekonwertuje zmienną $x na typ integer,
-    ale używając operatora rzutowania typu zamiast funkcji. 
+    ale używając operatora rzutowania typu zamiast funkcji. Wynik zapisz do zmiennej $x_converted.
 </p>
