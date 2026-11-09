@@ -68,7 +68,18 @@ aside{
     width: 25%;
     margin: 0;
     padding: 0;
-    min-height: calc(100vh - 180px);
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #777bb3 #9ca1e7;
+}
+
+.navbox ~ .content aside{
+    top: 40px;
+    height: calc(100vh - 40px);
 }
 
 main{

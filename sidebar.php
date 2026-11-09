@@ -16,3 +16,12 @@ $active = $_GET['src'] ?? '';
         </ul>
     <?php endforeach; ?>
 </aside>
+<script>
+    (function () {
+        const aside = document.querySelector('aside');
+        const active = aside.querySelector('li.active');
+        if (active) {
+            aside.scrollTop = active.offsetTop - aside.clientHeight / 2;
+        }
+    })();
+</script>
