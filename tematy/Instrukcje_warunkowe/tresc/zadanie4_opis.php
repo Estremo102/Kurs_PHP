@@ -21,4 +21,4 @@ if ($t < "20") {
 } else {
   // kod który wykona się jeśli oba warunki logiczne wynoszą false;
 }</code></pre>
-<p>Zadanie: W kodzie masz dostęp do zmiennej $liczba, jeśli przypisana do niej wartość jest mniejsza od 21 wyświetl napis "$liczba jest mniejsza od 21", w przeciwnym wypadku jeśli jest równa 21 wyświetl napis "$liczba jest równa 21", w przeciwnym wypadku wyświetl napis "$liczba jest większa od 21" </p>
+<p>Zadanie: W kodzie masz dostęp do zmiennej $liczba. Jeśli przypisana do niej wartość jest mniejsza od 21, wyświetl napis "{$liczba} jest mniejsza od 21", w przeciwnym wypadku, jeśli jest równa 21, wyświetl napis "{$liczba} jest równa 21", w przeciwnym wypadku wyświetl napis "{$liczba} jest większa od 21". W miejscu {$liczba} ma się pojawić wartość zmiennej, np. "15 jest mniejsza od 21".</p>

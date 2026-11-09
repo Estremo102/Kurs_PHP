@@ -25,4 +25,4 @@
     <pre><code class="language-php">$username = $_GET['user'] ?? 'guest';</code></pre>
     Znaczenie: „weź $_GET['user'], a jeśli nie istnieje lub jest null, użyj 'guest'”.
 </p>
-<p>Twoim zadaniem jest przetłumaczenie funkcji z excela na php. <code>=JEŻELI($A1>50;"Zaliczono";"Nie zaliczono") i wyświetlenie wyniku. W kodzie masz dostęp do zmiennej $A1</code></p>
+<p>Twoim zadaniem jest przetłumaczenie funkcji z excela <code>=JEŻELI($A1>50;"Zaliczono";"Nie zaliczono")</code> na php za pomocą operatora trójargumentowego i wyświetlenie wyniku. W kodzie masz dostęp do zmiennej $A1.</p>
