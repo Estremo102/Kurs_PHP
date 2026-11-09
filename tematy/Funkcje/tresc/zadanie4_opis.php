@@ -36,7 +36,7 @@ echo "$x<br>";
 ?></code></pre>
 <p>Jak możesz zauważyć, brak znaku & sprawia, że liczba w funkcji to kopia, jednak jeśli użyjemy tego znaku działamy na oryginalnej zmiennej.</p>
 <p>
-    Twoim zadaniem jest napisanie funkcji oczyscTekst, która przyjmuje jeden parametr i modyfikuje go w następujący sposób: usuwa spacje z początku i końca tekstu, zamienia wiele spacji na jedną, zamienia cały tekst na małe litery. <br>
+    Twoim zadaniem jest napisanie funkcji oczyscTekst, która przyjmuje jeden parametr przekazywany przez referencję i modyfikuje go w następujący sposób: usuwa spacje z początku i końca tekstu, zamienia wiele spacji na jedną, zamienia cały tekst na małe litery. <br>
     Przykładowe rozwiązania: 
     <ol>
         <li>trim + preg_replace (wymaga <a href="?title=RegEx&src=RegEx">regex</a>, który dopiero będziemy poznawać w przyszłych lekcjach) + strtolower</li>
