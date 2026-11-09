@@ -26,8 +26,7 @@
     </ul>
     Funkcja substr ma problem z polskimi znakami, jeśli potrzebujesz obsługiwać znaki diakrytyczne użyj metody mb_substr();.
 </p>
-<p>Dane są zmienne imie i nazwisko, Twoim zadaniem jest wydzielenie 2 pierwszych liter z imienia, a z nazwiska dwie przedostatnie litery. Wydzielone ciągi znaków złącz w jeden ze znakiem - pomiędzy wydzielonymi ciągami znaków. Rezultat zapisz do zmiennej wynik.</p>
-<?php 
-    $imie = 'Mariusz';
-    $nazwisko = 'Gwóźdź';
-?>
+<p>Dane są zmienne $imie i $nazwisko:</p>
+<pre><code class="language-php">$imie = 'Mariusz';
+$nazwisko = 'Gwóźdź';</code></pre>
+<p>Twoim zadaniem jest wydzielenie z imienia 2 pierwszych liter, a z nazwiska 2 liter poprzedzających ostatnią literę. Wydzielone fragmenty złącz w jeden ciąg znaków, wstawiając pomiędzy nimi znak -. Rezultat zapisz do zmiennej $wynik.</p>

@@ -1,5 +1,5 @@
 <h3>Liczby</h3>
-<p>W PHP istnieją trzy główne typy liczbowe: Integer (np. 21), Float (np. 3.7) i Number Strings (np. "2"), a także dwa dodatkowe typy danych używane dla liczb: Infinity i NaN.</p>
+<p>W PHP istnieją trzy główne typy liczbowe: Integer (np. 21), Float (np. 3.7) i Number Strings (np. "2"), a także dwie specjalne wartości typu float: INF (Infinity, nieskończoność) i NAN (Not a Number).</p>
 <h3>Integer</h3>
 <p>Liczba całkowita to liczba bez części dziesiętnej, z zakresu od -2147483648 do 2147483647 w systemach 32-bitowych oraz od -9223372036854775808 do 9223372036854775807 w systemach 64-bitowych. Wartość spoza tego zakresu zostanie zapisana jako liczba zmiennoprzecinkowa, ponieważ przekracza limit liczby całkowitej. Funkcja is_int() służy do sprawdzania, czy zmienna jest typu całkowitego.</p>
 <h3>Float</h3>
@@ -18,7 +18,7 @@
 <h3>NaN</h3>
 <p>NaN oznacza Not a Number (nie liczba). NaN jest używane w przypadku niewykonalnych operacji matematycznych. Np: pierwiastek z -1 wynosi i czyli liczbę spoza zbioru liczb rzeczywistych, więc sqrt(-1) zwróci NaN. Funkcja is_nan() służy do sprawdzania, czy wartość nie jest liczbą.</p>
 <h3>Number String</h3>
-<p>Ciągi liczbowe w PHP to zmienne typu string które można przekonwertować na typ liczbowy. Funkcja is_numeric() zwraca wartość true, jeśli zmienna jest liczbą lub ciągiem liczbowym.</p>
+<p>Ciąg liczbowy to zmienna typu string zawierająca liczbę, np. "42" lub "3.5", którą PHP potrafi przekonwertować na typ liczbowy. Funkcja is_numeric() zwraca wartość true, jeśli zmienna jest liczbą lub ciągiem liczbowym.</p>
 <h3>Zadanie</h3>
-<p>Twoim zadaniem jest utworzenie zmiennych int, f, inf, nan i number i przypisanie im wartości wyżej opisywanych typów danych.</p>
+<p>Twoim zadaniem jest utworzenie zmiennych $int, $f, $inf, $nan i $number i przypisanie im kolejno: liczby całkowitej, liczby zmiennoprzecinkowej, nieskończoności, wartości NaN oraz ciągu liczbowego.</p>
             

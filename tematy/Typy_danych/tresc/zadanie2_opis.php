@@ -11,7 +11,14 @@ echo "Produkt kosztuje $cena złotych";</code></pre>
     W przypadku znalezienia dopasowania funkcja zwraca pozycję znaku pierwszego dopasowania. W przypadku braku dopasowania zwróci FALSE.
 </p>
 <p>
-    Twoim zadaniem jest sprawdzenie długość tekstu, ilość słów oraz pozycję słowa "że" w tekście: "Nie wiadomo czy ta historia jest prawdziwa. Sam Herodot zastrzega się, że usłyszał ją od  egipskich kapłanów, ale jej echo do dziś pobrzmiewa w nazwie geometria." <br>
-    Wyniki zapisz kolejno w zmiennych: len, words, pos. Wypisz zmienne oddzielone spacjami
+    Uwaga: funkcje strlen() i strpos() liczą bajty, a nie znaki, więc polskie litery (zapisywane na 2 bajtach) zawyżają wynik. Aby liczyć znaki, użyj ich odpowiedników mb_strlen() i mb_strpos(). Funkcja str_word_count() również nie rozpoznaje polskich liter i traktuje je jak separatory słów.
+</p>
+<p>
+    Dana jest zmienna $tekst o wartości:
+</p>
+<pre><code class="language-php">$tekst = "Nie wiadomo czy ta historia jest prawdziwa. Sam Herodot zastrzega się, że usłyszał ją od  egipskich kapłanów, ale jej echo do dziś pobrzmiewa w nazwie geometria.";</code></pre>
+<p>
+    Twoim zadaniem jest sprawdzenie długości tekstu, liczby słów oraz pozycji słowa "że" w zmiennej $tekst. <br>
+    Wyniki zapisz kolejno w zmiennych $len, $words, $pos, a następnie wypisz je oddzielone spacjami.
 </p>
             

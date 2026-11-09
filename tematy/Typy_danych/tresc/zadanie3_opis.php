@@ -10,7 +10,7 @@
         <li>Funkcja explode('separator', 'tekst') dzieli ciąg znaków na tablicę.</li>
     </ul>
 </p>
-<p>Dana jest zmienna input. Znajdują się w niej palindromy oddzielone średnikami. Twoim zadaniem jest zmodyfikowanie jej tak by była napisana z samych wielkich liter, bez spacji na końcu i początku tekstu, a następnie utwórz zmienną palindromy w której znajdzie się tablica z osobnymi palindromami.</p>
-<?php 
-    $input = ' KaMiLśLiMaK;kajak;a kanapa pana kota;Kobyła ma mały bok;Może jutro ta dama sama da tortu jeżom;Akta generała ma mała renegatka;Łapał za kran, a kanarka złapał ';
-?>
+<p>Uwaga: funkcje strtoupper() i strtolower() zmieniają wielkość tylko liter łacińskich bez polskich znaków. Aby poprawnie zamienić również ą, ś, ł itd., użyj mb_strtoupper() i mb_strtolower().</p>
+<p>Dana jest zmienna $input. Znajdują się w niej palindromy oddzielone średnikami:</p>
+<pre><code class="language-php">$input = ' KaMiLśLiMaK;kajak;a kanapa pana kota;Kobyła ma mały bok;Może jutro ta dama sama da tortu jeżom;Akta generała ma mała renegatka;Łapał za kran, a kanarka złapał ';</code></pre>
+<p>Twoim zadaniem jest zmodyfikowanie zmiennej $input tak, by była zapisana wielkimi literami i nie miała spacji na początku i końcu tekstu. Następnie utwórz zmienną $palindromy, w której znajdzie się tablica z osobnymi palindromami.</p>
