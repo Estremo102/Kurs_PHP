@@ -59,4 +59,4 @@ echo $cars[1][0].": In stock: ".$cars[1][1].", sold: ".$cars[1][2].".<br>";
 echo $cars[2][0].": In stock: ".$cars[2][1].", sold: ".$cars[2][2].".<br>";
 echo $cars[3][0].": In stock: ".$cars[3][1].", sold: ".$cars[3][2].".<br>";
 ?></code></pre>
-<p>Zadanie: Napisz funkcję która przyjmuje tablicę dwuwymiarową oraz numer indeksu do wyszukania samochodu i zmniejszająca ilość samochodów na stanie i zwiększającą ilość sprzedanych.</p>
+<p>Zadanie: Napisz funkcję sprzedajSamochod($samochody, $indeks), która przyjmuje tablicę dwuwymiarową w formacie takim jak $cars powyżej oraz indeks samochodu, a następnie zmniejsza o 1 liczbę samochodów na stanie i zwiększa o 1 liczbę sprzedanych. Funkcja może zmodyfikować tablicę przekazaną przez referencję (&) albo zwrócić zmienioną tablicę.</p>

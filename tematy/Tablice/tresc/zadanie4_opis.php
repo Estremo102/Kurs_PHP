@@ -23,7 +23,7 @@ $myCar["brand"] = "Ford";
 $myCar["model"] = "Mustang";
 $myCar["year"] = 1964;</code></pre>
 <p>Można tworzyć tablice mieszane, częściowo asocjacyjne, częściowo indeksowane</p>
-<p>Zadanie: Utwórz tablicę a następnie:
+<p>Zadanie: Utwórz pustą tablicę $tablica, a następnie wykonaj kolejno poniższe kroki (po wszystkich krokach możesz wyświetlić tablicę za pomocą print_r(), aby zobaczyć nadane indeksy):
   <ul>
     <li>dodaj dwa elementy o indeksach 0 i 1</li>
     <li>dodaj element na podstawie klucza</li>

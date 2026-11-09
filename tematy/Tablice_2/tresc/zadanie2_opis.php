@@ -30,4 +30,4 @@
     Rekurencyjne dzielą zbiór na mniejsze (Quick Sort, Merge Sort)<br>
     Iteracyjne wykorzystują pętle
 </p>
-<p>Zadanie: Wybierz jeden z algorytmów sortujących i zapoznaj się z jego sposobem działania, a następnie spróbuj go zaimplementować.</p>
+<p>Zadanie: Wybierz jeden z algorytmów sortujących i zapoznaj się z jego sposobem działania, a następnie spróbuj go zaimplementować. Napisz funkcję sortuj(array $tablica): array, która zwróci tablicę posortowaną rosnąco. Nie używaj wbudowanych funkcji sortujących (sort(), usort() itp.).</p>
