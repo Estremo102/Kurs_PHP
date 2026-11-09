@@ -25,6 +25,20 @@
         }
     }
 
+    function loadSavedProgress() {
+        const navButtons = document.querySelectorAll('nav ul li');
+        navButtons.forEach((button, i) => {
+            if (localStorage.getItem(`${srcPath}_zadanie${i + 1}`) === 'true') {
+                button.classList.add('done');
+            }
+        });
+        const progressBar = document.querySelector('nav progress');
+        if (progressBar) {
+            progressBar.value = document.querySelectorAll('nav ul li.done').length;
+        }
+    }
+    loadSavedProgress();
+
     function updateLocalStorage() {
         let buttons = document.querySelectorAll('nav ul li');
         for (let i = 0; i < buttons.length; i++) {

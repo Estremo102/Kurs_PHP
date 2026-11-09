@@ -19,6 +19,8 @@ $active = $_GET['src'] ?? '';
 </aside>
 <script>
     function animateProgress(progress, target, duration = 800) {
+        if ((progress._target ?? progress.value) === target) return;
+        progress._target = target;
         cancelAnimationFrame(progress._animId);
         const start = progress.value;
         const startTime = performance.now();
@@ -31,7 +33,7 @@ $active = $_GET['src'] ?? '';
         progress._animId = requestAnimationFrame(step);
     }
 
-    function updateSidebarProgress() {
+    function updateSidebarProgress(animate = true) {
         document.querySelectorAll('aside progress.topic-progress').forEach(progress => {
             let done = 0;
             for (let i = 1; i <= progress.max; i++) {
@@ -39,10 +41,14 @@ $active = $_GET['src'] ?? '';
                     done++;
                 }
             }
-            animateProgress(progress, done);
+            if (animate) {
+                animateProgress(progress, done);
+            } else {
+                progress.value = done;
+            }
         });
     }
-    updateSidebarProgress();
+    updateSidebarProgress(false);
 
     (function () {
         const aside = document.querySelector('aside');
