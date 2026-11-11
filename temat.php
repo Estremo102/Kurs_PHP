@@ -95,10 +95,7 @@
                     button.classList.remove('failed');
                     button.classList.add('done');
                 } else {
-                    button.classList.remove('done', 'changed', 'failed');
-                    void button.offsetWidth;
-                    button.classList.add('failed');
-                    button.addEventListener('animationend', () => button.classList.remove('failed'), { once: true });
+                    markTaskFailed(taskNumber);
                 }
             }
 
@@ -111,7 +108,19 @@
                 let result = await runCode(srcPath, taskNumber);
                 container.innerHTML = 'Błąd przy ładowaniu wyniku<br>' + result;
             }
+            markTaskFailed(taskNumber);
+            updateProgressBar();
+            updateLocalStorage();
         }
+    }
+
+    function markTaskFailed(taskNumber) {
+        const button = document.querySelectorAll('nav ul li')[taskNumber - 1];
+        if (!button) return;
+        button.classList.remove('done', 'changed', 'failed');
+        void button.offsetWidth;
+        button.classList.add('failed');
+        button.addEventListener('animationend', () => button.classList.remove('failed'), { once: true });
     }
 
     async function showCode(taskNumber) { 
