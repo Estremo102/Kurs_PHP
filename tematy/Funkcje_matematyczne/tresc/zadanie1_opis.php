@@ -1,7 +1,7 @@
 <h3>Funkcja pi()</h3>
 <p>Funkcja pi() zwraca wartość PI:</p>
-<pre><code class="language-php">echo(pi());</code></pre>
-<pre><code><?php echo(pi()); ?></code></pre>
+<pre><code class="language-php">echo pi();</code></pre>
+<pre><code><?php echo pi(); ?></code></pre>
 <p>
     Twoim zadaniem jest policzenie i wyświetlenie pola koła. Napisz skrypt, w którym:
     <ul>
