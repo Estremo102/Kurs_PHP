@@ -28,7 +28,7 @@ echo 'Hasło: '. str_repeat('•', mb_strlen($haslo, 'UTF-8'));
 ?></code></pre>
 
 <p>Zadanie: Poniżej jest formularz wysyłający zapytanie do pliku rozwiazania/zadanie1.php, napisz kod który wyświetli div z odpowiednim kolorem tła</p>
-<form action="<?= htmlspecialchars(str_replace('\\', '/', str_replace($_SERVER['DOCUMENT_ROOT'], '', __DIR__ . '/../rozwiazania/zadanie1.php')), ENT_QUOTES, 'UTF-8') ?>" method="post">
+<form action="<?= htmlspecialchars(str_replace(str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']), '', str_replace('\\', '/', __DIR__ . '/../rozwiazania/zadanie1.php')), ENT_QUOTES, 'UTF-8') ?>" method="post">
 Kolor tła:
 <select name="color">
 <option value="red">Czerwony</option>
