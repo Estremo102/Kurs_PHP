@@ -17,6 +17,9 @@ if (file_exists($rozw)) {
     include $rozw;
 }
 $output = ob_get_clean();
+// dane z formularza zadania służą tylko do wyświetlenia wyniku, testy dostają czyste $_POST
+$_POST = [];
+$_SERVER['REQUEST_METHOD'] = 'GET';
 
 $test = "$base/testy/zadanie{$index}.php";
 if (!file_exists($test)) {

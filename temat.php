@@ -63,7 +63,11 @@
         }
 
         try {
-            const response = await fetch(`test_runner.php?src=${srcPath}&i=${taskNumber}`);
+            // jeśli zadanie ma formularz wysyłający do pliku rozwiązania, przekazujemy jego dane
+            const form = [...document.querySelectorAll(`#zadanie${taskNumber} form`)]
+                .find(f => f.getAttribute('action')?.endsWith(`rozwiazania/zadanie${taskNumber}.php`));
+            const response = await fetch(`test_runner.php?src=${srcPath}&i=${taskNumber}`,
+                form ? { method: 'POST', body: new FormData(form) } : undefined);
             if (!response.ok) {
                 throw new Error(`HTTP error ${response.status}`);
             }
