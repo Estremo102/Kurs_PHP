@@ -6,7 +6,7 @@
 <pre><code class="language-php">$colors = array("red", "green", "blue", "yellow");
 
 foreach ($colors as $value) {
-  echo "$value <br>";
+  echo "$value &lt;br>";
 }</code></pre>
 <pre><code><?php 
 $colors = array("red", "green", "blue", "yellow");
