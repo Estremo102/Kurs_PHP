@@ -21,7 +21,7 @@ foreach ($colors as $value) {
 <pre><code class="language-php">$members = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
 
 foreach ($members as $key => $value) {
-  echo "$key : $value <br>";
+  echo "$key : $value &lt;br>";
 }</code></pre>
 <pre><code><?php 
 $members = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
@@ -43,7 +43,7 @@ foreach ($members as $key => $value) {
 $myCar = new Car("red", "Volvo");
 
 foreach ($myCar as $x => $y) {
-  echo "$x: $y <br>";
+  echo "$x: $y &lt;br>";
 }</code></pre>
 <pre><code><?php 
 class Car {
@@ -97,7 +97,7 @@ var_dump($colors);?></code></pre>
 <pre><code class="language-php">$colors = array("red", "green", "blue", "yellow");
 
 foreach ($colors as $x) :
-  echo "$x <br>";
+  echo "$x &lt;br>";
 endforeach;</code></pre>
 <pre><code><?php
 $colors = array("red", "green", "blue", "yellow");
