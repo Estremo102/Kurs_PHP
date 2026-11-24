@@ -4,3 +4,4 @@
 4. tematy więcej o PHP zobaczyć czy dodać więcej
 5. zrobić rozdział OOP w PHP
 6. tematy PHP + MySQL zobaczyć, czy dodać coś jeszcze
+7. błąd w zadaniu jeśli pętla nieskończona
